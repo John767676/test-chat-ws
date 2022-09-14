@@ -1,6 +1,6 @@
 import {WebSocketServer} from 'ws'
 
-const wss = new WebSocketServer({host: 'wss://https://test-chat-ws.vercel.app/'})
+const wss = new WebSocketServer({host: 'https://test-chat-ws.vercel.app/'})
 
 wss.on('connection',client => {
     client.on('message', (message,isBinary) => {
