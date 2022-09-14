@@ -23,7 +23,7 @@
                 </div>
             `;
         }
-        const ws = new WebSocket('ws://https://test-chat-ws.vercel.app/')
+        const ws = new WebSocket('wss://https://test-chat-ws.vercel.app')
         ws.addEventListener('message', ev => {
             ev.data.text().then(showMessage)
         })
